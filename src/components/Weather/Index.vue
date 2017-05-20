@@ -1,35 +1,27 @@
 <template>
   <div class="weather">
-    <h1>Weather Page!</h1>
+    <search></search>
+    <now></now>
+    <forecast></forecast>
   </div>
 </template>
 
 <script>
+import Search from './../Search/Index'
+import Now from './Now'
+import Forecast from './Forecast'
+
 export default {
   name: 'weather',
-  data () {
-
+  components: {
+    Search,
+    Now,
+    Forecast
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>
